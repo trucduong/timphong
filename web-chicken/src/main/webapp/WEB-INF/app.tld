@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>Business TLD</short-name>
+
+  <tag>
+    <name>Navigator</name>
+    <tag-class>web.business.taglib.NavigatorTag</tag-class>
+    <body-content>scriptless</body-content>
+  </tag>
+  <!-- Lazy load server template -->
+  <tag>
+    <name>LazyLoad1</name>
+    <tag-class>web.business.taglib.LazyLoadTag</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+		<name>name</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>template</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>data</name>
+        <required>false</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>cssclass</name>
+        <required>false</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>autoLoad</name>
+        <required>false</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <!-- Paging tag -->
+  <tag>
+    <name>Paging</name>
+    <tag-class>web.business.taglib.PagingTag</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+		<name>type</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+		<name>info</name>
+		<required>true</required>
+		<type>web.business.taglib.PagingTagInfo</type>
+		<rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <!-- Alert tag -->
+  <tag>
+    <name>Alert</name>
+    <tag-class>web.business.taglib.AlertTag</tag-class>
+    <body-content>scriptless</body-content>
+  </tag>
+  <!-- Editor tag -->
+  <tag>
+    <name>Editor</name>
+    <tag-class>web.business.taglib.EditorTag</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+        <name>name</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>value</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  
+</taglib>

@@ -1,0 +1,46 @@
+{
+	"root": {
+		"id": "nav.dashboard",
+		"name": "Dashboard",
+		"url": "/"
+	},
+	"items": [
+		{
+			"id": "nav.about",
+			"name": "About",
+			"url": "/about"
+		},
+		{
+			"id": "nav.blog",
+			"name": "Blog",
+			"url": "/blog"
+		},
+		{
+			"id": "nav.user",
+			"name": "User",
+			"url": "/user"
+		},
+		{
+			"id": "nav.other",
+			"name": "Other",
+			"url": "/other",
+			"childs": [
+				{
+					"id": "nav.other1",
+					"name": "Other 1",
+					"url": "#"
+				},
+				{
+					"id": "nav.other2",
+					"name": "Other 2",
+					"url": "#"
+				},
+				{
+					"id": "nav.other3",
+					"name": "Other 3",
+					"url": "#"
+				}
+			]
+		}
+	]
+}
